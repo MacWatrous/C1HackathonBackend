@@ -39,7 +39,7 @@ class ADay(object):
         #"""UPDATE main SET (positivenum, negativenum, neutralnum, totalnum) = ("""+self.result[0]+""", """ + self.result[1] + """, """ + self.result[2] + """, """ + self.result[3] + """) WHERE date IN(SELECT max(date) FROM myTable)"""
 
         try:
-            conn = psycopg2.connect("dbname='d86041q8vqfr8h' user='cblxxgxfzcxhyc' host='ec2-23-21-220-48.compute-1.amazonaws.com' password='7dd5cfedce5ee3eba6ae1572007339c946cb0ae5b62b627351f41e425d2acc34' sslmode='require'")
+            conn = psycopg2.connect("dbname='' user='' host='' password='' sslmode='require'")
         except:
             print("I am unable to connect to the database")
 
